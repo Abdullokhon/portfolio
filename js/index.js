@@ -3,12 +3,13 @@ window.addEventListener('DOMContentLoaded',function (){
         const header = document.querySelector('header');
         header.classList.toggle('sticky',window.scrollY > 0)
     })
-   const menuBtn = document.querySelector('.menu-btn')
-    const nav = document.querySelector('.navigation')
+   const menuBtn = document.querySelector('.menu-btn'),
+         nav = document.querySelector('.navigation')
     menuBtn.addEventListener('click',() => {
         menuBtn.classList.toggle('active')
         nav.classList.toggle('active')
     })
+
     const scrollbtn = document.querySelector('.scrolltotop')
     window.addEventListener('scroll', () => {
         scrollbtn.classList.toggle('active', window.scrollY > 500)

@@ -525,8 +525,12 @@ section {
 .footer p{
     margin: 10px;
 }
+.none{
+    display: none;
+}
+
 @media (min-width: 1050px) {
-    .menu-btn{
+    .menu-btn i{
         display: none;
     }
 }
@@ -573,13 +577,7 @@ section {
         cursor: pointer;
         transition: .5s ease;
     }
-    .menu-btn.active{
-        z-index: 999;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 25px;
-        transition: .4s ease;
-    }
+
     section{
         padding: 80px 20px;
     }
